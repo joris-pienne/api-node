@@ -1,0 +1,40 @@
+.daySelector
+{
+  display: flex;
+
+  &__day
+  {
+    border: 1px solid $secondary-color;
+    border-radius: 50px;
+    display: flex;
+
+    p
+    {
+      border-radius: 50px;
+      text-align: center;
+      padding: 9px 15px 9px 15px; //haut droite bas gauche
+      cursor: pointer;
+      color: $secondary-color;
+    }
+
+    &:not(:first-of-type)
+    {
+      margin-left: 18px;
+    }
+
+    &:hover p
+    {
+      color: $main-color;
+    }
+
+    &.is-selected
+    {
+      border-color: $main-color;
+
+      p
+      {
+        color: $main-color;
+      }
+    }
+  }
+}
