@@ -6,90 +6,93 @@
     <title>Météo City JS</title>
   </head>
   <body>
-    <h1>MÉTÉO City </h1>
+    <div class="wrap">
 
-    <form method="post">
-      <div class="inputs">
-        <input id="inputs__city" type="text" name="city" value="" required>
-        <label for="inputs__city">City :</label>
-      </div>
-      <div class="inputs">
-        <input id="inputs__country" type="text" name="country" value="" required>
-        <label for="inputs__country">Country :</label>
-      </div>
-      <div class="send">
-        <p class="send__tips">Fill in the form and click on the arrow</p>
-        <input type="submit" value="">
-      </div>
-    </form>
+      <h1>MÉTÉO City </h1>
 
-    <div class="daySelector">
-      <div class="daySelector__day js-daySelector-day">
-        <p class="js-daySelector-day-text">Mon.</p> <!-- monday -->
-      </div>
-      <div class="daySelector__day js-daySelector-day">
-        <p class="js-daySelector-day-text">Tue.</p> <!-- tuesday -->
-      </div>
-      <div class="daySelector__day js-daySelector-day">
-        <p class="js-daySelector-day-text">Wed.</p> <!-- wednesday -->
-      </div>
-      <div class="daySelector__day js-daySelector-day">
-        <p class="js-daySelector-day-text">Thu.</p> <!-- thursday -->
-      </div>
-      <div class="daySelector__day js-daySelector-day">
-        <p class="js-daySelector-day-text">Fri.</p> <!-- friday -->
-      </div>
-      <div class="daySelector__day js-daySelector-day">
-        <p class="js-daySelector-day-text">Sat.</p> <!-- saturday -->
-      </div>
-      <div class="daySelector__day js-daySelector-day">
-        <p class="js-daySelector-day-text">Sun.</p> <!-- sunday -->
-      </div>
-    </div>
-
-    <div class="infoCity">
-      <h2 class="js-infoCity-city">Chambery, France</h2>
-      <p class="js-infoCity-date">Monday 02 March</p>
-      <div class="infoCity__importantInfo">
-        <div class="infoCity__importantInfo__weather">
-          <img class="js-infoCity-importantInfo-weather-picture"></img>
-          <p class="js-infoCity-importInfo-weather-info">Sunny</p>
+      <form method="post">
+        <div class="inputs">
+          <input id="inputs__city" type="text" name="city" value="" required>
+          <label for="inputs__city">City :</label>
         </div>
-        <div class="infoCity__importantInfo__temp">
-          <p class="js-infoCity-importantInfo-temp-mainInfo">83<span class="js-infoCity-importantInfo-temp-units">°F</span></p>
-          <div class="infoCity__importantInfo__temp__secondaryInfo">
-            <div class="infoCity__importantInfo__temp__secondaryInfo__minTemp">
-              <p class="js-infoCity-importantInfo-temp-secondaryInfo-minTemp-number">79</p>
-              <img src="" alt="Fleche température minimale">
+        <div class="inputs">
+          <input id="inputs__country" type="text" name="country" value="" required>
+          <label for="inputs__country">Country :</label>
+        </div>
+        <div class="send">
+          <p class="send__tips">Fill in the form and click on the arrow</p>
+          <input type="submit" value="">
+        </div>
+      </form>
+
+      <div class="daySelector">
+        <div class="daySelector__day js-daySelector-day">
+          <p class="js-daySelector-day-text">Mon.</p> <!-- monday -->
+        </div>
+        <div class="daySelector__day js-daySelector-day">
+          <p class="js-daySelector-day-text">Tue.</p> <!-- tuesday -->
+        </div>
+        <div class="daySelector__day js-daySelector-day">
+          <p class="js-daySelector-day-text">Wed.</p> <!-- wednesday -->
+        </div>
+        <div class="daySelector__day js-daySelector-day">
+          <p class="js-daySelector-day-text">Thu.</p> <!-- thursday -->
+        </div>
+        <div class="daySelector__day js-daySelector-day">
+          <p class="js-daySelector-day-text">Fri.</p> <!-- friday -->
+        </div>
+        <div class="daySelector__day js-daySelector-day">
+          <p class="js-daySelector-day-text">Sat.</p> <!-- saturday -->
+        </div>
+        <div class="daySelector__day js-daySelector-day">
+          <p class="js-daySelector-day-text">Sun.</p> <!-- sunday -->
+        </div>
+      </div>
+
+      <div class="infoCity">
+        <h2 class="js-infoCity-city">Chambery, France</h2>
+        <p class="js-infoCity-date">Monday 02 March</p>
+        <div class="infoCity__importantInfo">
+          <div class="infoCity__importantInfo__weather">
+            <img class="js-infoCity-importantInfo-weather-picture"></img>
+            <p class="js-infoCity-importInfo-weather-info">Sunny</p>
+          </div>
+          <div class="infoCity__importantInfo__temp">
+            <p class="js-infoCity-importantInfo-temp-mainInfo">83<span class="js-infoCity-importantInfo-temp-units">°F</span></p>
+            <div class="infoCity__importantInfo__temp__secondaryInfo">
+              <div class="infoCity__importantInfo__temp__secondaryInfo__minTemp">
+                <p class="js-infoCity-importantInfo-temp-secondaryInfo-minTemp-number">79</p>
+                <img src="" alt="Fleche température minimale">
+              </div>
+              <div class="infoCity__importantInfo__temp__secondaryInfo__maxTemp">
+                <p class="js-infoCity-importantInfo-temp-secondaryInfo-maxTemp-number">86</p>
+                <img src="" alt="Fleche température maximale">
+              </div>
             </div>
-            <div class="infoCity__importantInfo__temp__secondaryInfo__maxTemp">
-              <p class="js-infoCity-importantInfo-temp-secondaryInfo-maxTemp-number">86</p>
-              <img src="" alt="Fleche température maximale">
+          </div>
+        </div>
+        <div class="infoCity__otherInfo">
+          <div class="infoCity__otherInfo__rain">
+            <div class="infoCity__otherInfo__rain__flex">
+              <img src="" alt="image pluie">
+              <p>%</p>
             </div>
+            <p class="js-infoCity-otherInfo-rain-number">10</p>
           </div>
-        </div>
-      </div>
-      <div class="infoCity__otherInfo">
-        <div class="infoCity__otherInfo__rain">
-          <div class="infoCity__otherInfo__rain__flex">
-            <img src="" alt="image pluie">
-            <p>%</p>
+          <div class="infoCity__otherInfo__snow">
+            <div class="infoCity__otherInfo__snow__flex">
+              <img src="" alt="image neige">
+              <p>%</p>
+            </div>
+            <p class="js-infoCity-otherInfo-snow-number">10</p>
           </div>
-          <p class="js-infoCity-otherInfo-rain-number">10</p>
-        </div>
-        <div class="infoCity__otherInfo__snow">
-          <div class="infoCity__otherInfo__snow__flex">
-            <img src="" alt="image neige">
-            <p>%</p>
+          <div class="infoCity__otherInfo__wind">
+            <div class="infoCity__otherInfo__wind__flex">
+              <img src="" alt="image vent">
+              <p>%</p>
+            </div>
+            <p class="js-infoCity-otherInfo-wind-number">10</p>
           </div>
-          <p class="js-infoCity-otherInfo-snow-number">10</p>
-        </div>
-        <div class="infoCity__otherInfo__wind">
-          <div class="infoCity__otherInfo__wind__flex">
-            <img src="" alt="image vent">
-            <p>%</p>
-          </div>
-          <p class="js-infoCity-otherInfo-wind-number">10</p>
         </div>
       </div>
     </div>

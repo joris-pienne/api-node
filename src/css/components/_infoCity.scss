@@ -1,0 +1,144 @@
+div.infoCity
+{
+  display: flex;
+  flex-direction: column;
+  height: 524px;
+  width: 518px;
+  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.3);
+  border-radius: 85px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+
+  h2
+  {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+
+  p
+  {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  &__importantInfo
+  {
+    display: flex;
+    margin-top: 60px;
+
+    &__weather
+    {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+
+      img
+      {
+        height: 99px;
+      }
+
+      p
+      {
+        margin-top: 13px;
+        font-size: 20px;
+      }
+    }
+
+    &__temp
+    {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto 0 90px; //haut droite bas gauche
+
+      p
+      {
+        font-size: 50px;
+
+        span
+        {
+          color: $main-color;
+        }
+      }
+
+      &__secondaryInfo
+      {
+        display: flex;
+        margin-top: 13px;
+
+        &__minTemp,
+        &__maxTemp
+        {
+          display: flex;
+
+          p
+          {
+            font-size: 20px;
+            margin-top: auto;
+            margin-bottom: auto;
+          }
+
+          img
+          {
+            height: 20px;
+            margin-left: 5px;
+          }
+
+          &:last-of-type
+          {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+
+  &__otherInfo
+  {
+    display: flex;
+    margin: 68px auto 0 auto; //haut droite bas gauche
+
+    &__rain,
+    &__snow,
+    &__wind
+    {
+      display: flex;
+      flex-direction: column;
+
+      &__flex
+      {
+        flex-direction: row;
+        height: 47px;
+
+        img
+        {
+          margin-right: 5px;
+        }
+
+        p
+        {
+          font-size: 30px;
+          margin: auto;
+        }
+      }
+
+      p
+      {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10px;
+      }
+
+      &:not(:first-of-type)
+      {
+        margin-left: 53px;
+      }
+    }
+  }
+}
