@@ -1,6 +1,5 @@
 import '../css/app.scss';
 import DataApi from './dataApi';
-import DaySelector from './daySelector';
 
 class App
 {
@@ -12,7 +11,6 @@ class App
   initApp()
   {
     new DataApi();
-    new DaySelector();
   }
 }
 

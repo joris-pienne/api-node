@@ -57,15 +57,21 @@ div.infoCity
       flex-direction: column;
       margin: 0 auto 0 90px; //haut droite bas gauche
 
-      p
+      &__unit
       {
-        font-size: 50px;
-
-        span
+        display: flex;
+        p
         {
+          font-size: 50px;
+        }
+
+        p:last-of-type
+        {
+          margin-left: 5px;
           color: $main-color;
         }
       }
+
 
       &__secondaryInfo
       {
@@ -113,7 +119,7 @@ div.infoCity
 
       &__flex
       {
-        flex-direction: row;
+        display: flex;
         height: 47px;
 
         img

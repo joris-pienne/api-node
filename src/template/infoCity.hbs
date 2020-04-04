@@ -1,0 +1,48 @@
+
+  <h2>{{ city }}, {{ country }}</h2>
+  <p>{{ date }}</p>
+  <div class="infoCity__importantInfo">
+    <div class="infoCity__importantInfo__weather">
+      <img id="js-picWeather" alt="{{ weather }}"></img>
+      <p id="js-weatherDescri">{{ weather }}</p>
+    </div>
+    <div class="infoCity__importantInfo__temp">
+      <div class="infoCity__importantInfo__temp__unit">
+        <p class="js-degree">{{ temp }}</p>
+        <p>°F</p>
+      </div>
+      <div class="infoCity__importantInfo__temp__secondaryInfo">
+        <div class="infoCity__importantInfo__temp__secondaryInfo__minTemp">
+          <p class="js-degree-min">{{ tempMin }}</p>
+          <img src="src/pictures/arrow-down.svg" alt="Fleche température minimale">
+        </div>
+        <div class="infoCity__importantInfo__temp__secondaryInfo__maxTemp">
+          <p class="js-degree-max">{{ tempMax }}</p>
+          <img src="src/pictures/arrow-up.svg" alt="Fleche température maximale">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="infoCity__otherInfo">
+    <div class="infoCity__otherInfo__rain">
+      <div class="infoCity__otherInfo__rain__flex">
+        <img src="src/pictures/rain.svg" alt="image pluie">
+        <p>%</p>
+      </div>
+      <p>{{ rain }}</p>
+    </div>
+    <div class="infoCity__otherInfo__snow">
+      <div class="infoCity__otherInfo__snow__flex">
+        <img src="src/pictures/snow.svg" alt="image neige">
+        <p>%</p>
+      </div>
+      <p>{{ snow }}</p>
+    </div>
+    <div class="infoCity__otherInfo__wind">
+      <div class="infoCity__otherInfo__wind__flex">
+        <img src="src/pictures/rain.svg" alt="image vent">
+        <p>mph</p>
+      </div>
+      <p>{{ wind }}</p>
+    </div>
+  </div>

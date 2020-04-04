@@ -45,6 +45,13 @@ config = {
                 }, 'sass-loader']
             },
             {
+              test: /\.mustache$/,
+              exclude: /node_modules/,
+              use: {
+                  loader: 'mustache',
+              }
+            },
+            {
                 test: /\.(png|jpg|gif)$/,
                 use: [
                     {
@@ -81,4 +88,3 @@ config = {
 };
 
 module.exports = config;
-

@@ -42,6 +42,11 @@ config = {
                 use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
             },
             {
+              test: /\.hbs$/,
+              use: 'handlebars-loader'
+
+            },
+            {
                 test: /\.(png|jpg|gif)$/,
                 use: [
                     {
