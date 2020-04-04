@@ -47,7 +47,7 @@ export default class DataApi
          "snow":response.data[0].snow,
          "wind":response.data[0].wind_spd
        }
-       console.log(city_data);
+       //console.log(city_data);
 
        var rendered = InfoCityTemplate(city_data)
        $('div.infoCity').html(rendered);
